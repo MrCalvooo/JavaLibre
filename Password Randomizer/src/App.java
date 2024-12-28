@@ -23,25 +23,25 @@ public class App {
 
             switch (random) {
                 case 1 -> {
-                    random = (int) (Math.random() * minus.length() + 1);
+                    random = (int) (Math.random() * minus.length());
                     caracter = minus.charAt(random);
                     password += caracter;
                 }
 
                 case 2 -> {
-                    random = (int) (Math.random() * mayus.length() + 1);
+                    random = (int) (Math.random() * mayus.length());
                     caracter = mayus.charAt(random);
                     password += caracter;
                 }
 
                 case 3 -> {
-                    random = (int) (Math.random() * nums.length() + 1);
+                    random = (int) (Math.random() * nums.length());
                     caracter = nums.charAt(random);
                     password += caracter;
                 }
 
                 case 4 -> {
-                    random = (int) (Math.random() * especiales.length() + 1);
+                    random = (int) (Math.random() * especiales.length());
                     caracter = especiales.charAt(random);
                     password += caracter;
                 }
