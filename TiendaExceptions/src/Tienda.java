@@ -35,16 +35,16 @@ public class Tienda {
     public void comprarProductos(String nombre, int cantidad) throws CantidadInvalidaException, ProductoNoDisponibleException {
         if (cantidad < 0) {
             throw new CantidadInvalidaException();
-        }
-
-        for (Productos producto : productos) {
-            if (nombre.equalsIgnoreCase(producto.getNombre())) {
+        } else {
+             for (Productos producto : productos) {
+                if (nombre.equalsIgnoreCase(producto.getNombre())) {
                 if (producto.getStock() < cantidad) {
                     throw new ProductoNoDisponibleException();
                 } else {
                     producto.setStock(producto.getStock() - cantidad);
                 }
             }
+        }   
         }
     }
 
