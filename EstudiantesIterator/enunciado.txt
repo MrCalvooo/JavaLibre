@@ -1,0 +1,19 @@
+Crea una clase llamada Estudiante con los siguientes atributos:
+
+    Nombre (String)
+
+    Edad (int)
+
+Incluye un constructor para inicializar los atributos y un método toString() que devuelva una representación legible del objeto Estudiante.
+
+En tu clase principal (Main), realiza lo siguiente:
+
+    Crea una lista (ArrayList) de objetos Estudiante.
+
+    Añade al menos 5 estudiantes a la lista.
+
+    Usa un iterador para recorrer la lista y mostrar los detalles de cada estudiante.
+
+    Usa otro iterador para eliminar todos los estudiantes cuya edad sea menor que 18.
+
+    Muestra la lista actualizada después de eliminar a los estudiantes menores de edad.

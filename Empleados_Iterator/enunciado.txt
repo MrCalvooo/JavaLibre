@@ -1,0 +1,23 @@
+Crea una clase llamada Empleado con los siguientes atributos:
+
+    Nombre (String)
+
+    Departamento (String)
+
+    Salario (double)
+
+Incluye un constructor para inicializar estos atributos y el método toString() para una representación legible del objeto.
+
+En la clase principal (Main o App), realiza lo siguiente:
+
+    Crea una lista (ArrayList) de objetos Empleado.
+
+    Usa un iterador para:
+
+        Mostrar la lista completa de empleados.
+
+        Incrementar el salario en un 10% para los empleados del departamento "Ventas".
+
+        Eliminar a los empleados cuyo salario sea inferior a 2000.
+
+    Muestra la lista actualizada de empleados después de aplicar los cambios.
