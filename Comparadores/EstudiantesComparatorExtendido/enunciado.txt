@@ -1,0 +1,15 @@
+Vamos a manejar una lista de estudiantes. Cada estudiante tiene:
+
+    Nombre (String)
+
+    Edad (int)
+
+    Nota promedio (double)
+
+Queremos crear un Comparator que realice lo siguiente:
+
+    Ordenar primero por nota promedio de forma descendente.
+
+    Si las notas son iguales, ordenar por edad de forma ascendente.
+
+    Si ambos (nota promedio y edad) son iguales, ordenar por nombre alfabéticamente.
