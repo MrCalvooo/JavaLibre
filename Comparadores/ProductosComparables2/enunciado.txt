@@ -1,0 +1,14 @@
+Cada producto tiene un nombre, un precio y una categoría
+(como "electrónica", "ropa", etc.). Queremos ordenar los productos de varias maneras.
+
+Tareas:
+
+    Implementa la clase Producto que implemente Comparable y permita ordenar los productos por nombre.
+
+    Crea un Comparator llamado ComparadorPorPrecio que permita ordenar los productos por precio en orden ascendente.
+
+    Crea otro Comparator llamado ComparadorPorCategoria que permita 
+    ordenar los productos por categoría en orden alfabético.
+
+    Crea una lista de productos en el método main,
+    ordénalos según los diferentes criterios y muestra los resultados por consola.
