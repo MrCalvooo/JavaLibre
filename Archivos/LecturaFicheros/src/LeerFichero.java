@@ -7,17 +7,15 @@ public class LeerFichero {
 
     public void lee() {
         try {
-            FileReader entrada = new FileReader("mifichero.txt");
-
-            int c = entrada.read();
-            
-
-            while (c != -1) {
-                c = entrada.read();
-                char letra = (char) c;
-                System.out.print(letra);
+            try (FileReader entrada = new FileReader("mifichero.txt")) {
+                int c = entrada.read();
+                
+                while (c != -1) {
+                    c = entrada.read();
+                    char letra = (char) c;
+                    System.out.print(letra);
+                }
             }
-
         } catch (FileNotFoundException e) {
             System.out.println("No se encontro el fichero: " + e.getMessage());
         } catch (IOException e) {
