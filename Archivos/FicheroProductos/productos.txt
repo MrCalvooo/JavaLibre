@@ -1,0 +1,6 @@
+Producto: Manzana, precio: 0.5, cantidad: 10
+Producto: Pan, precio: 1.2, cantidad: 5
+Producto: Leche, precio: 0.8, cantidad: 8
+Producto: Arroz, precio: 2.0, cantidad: 3
+Producto: Huevos, precio: 0.2, cantidad: 12
+Producto mas caro: Leche valor: 6.4
