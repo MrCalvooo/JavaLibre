@@ -1,0 +1,6 @@
+DATOS DEL ARCHIVO 1:
+Este es el contenido del archivo1.txt.
+Puedes agregar más líneas de texto aquí.
+Este archivo es parte de la combinación de archivos.
+DATOS DEL ARCHIVO 2:
+Este es un archivo de texto de ejemplo.Puedes agregar aquí cualquier contenido que desees.Este archivo se utiliza para la combinación de archivos en el proyecto.

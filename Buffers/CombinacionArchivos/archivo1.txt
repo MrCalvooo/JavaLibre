@@ -1,0 +1,3 @@
+Este es el contenido del archivo1.txt.
+Puedes agregar más líneas de texto aquí.
+Este archivo es parte de la combinación de archivos.

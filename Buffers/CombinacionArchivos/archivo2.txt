@@ -1,0 +1,3 @@
+Este es un archivo de texto de ejemplo.
+Puedes agregar aquí cualquier contenido que desees.
+Este archivo se utiliza para la combinación de archivos en el proyecto.
