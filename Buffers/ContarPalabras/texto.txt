@@ -1,0 +1,6 @@
+Este es un archivo de texto de ejemplo.
+Puedes escribir cualquier cosa aquí.
+Este archivo contiene varias líneas de texto.
+Cada línea puede tener palabras, números o caracteres especiales.
+
+¡Diviértete explorando el contenido del archivo!
