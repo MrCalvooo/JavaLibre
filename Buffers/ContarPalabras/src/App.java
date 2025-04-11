@@ -54,6 +54,9 @@ public class App {
             }
         }
 
+        totalPalabras = mapa.values().stream().mapToInt(Integer::intValue).sum();
+
+        System.out.println("TOTAL DE PALABRAS: " + totalPalabras);
         mapa.forEach((palabra, conteo) -> System.out.println(palabra + ": " + conteo));
 
     }
