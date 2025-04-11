@@ -37,7 +37,7 @@ public class App {
             System.out.println("Error al crear el archivo");
         }
 
-        int totalPalabras = 0;
+        int totalPalabras;
         Map<String, Integer> mapa = new HashMap<>();
 
         try (BufferedReader bufferedReader = Files.newBufferedReader(archivo)) {
