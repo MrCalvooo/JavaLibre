@@ -1,0 +1,33 @@
+Ejercicio 3: Buscar y reemplazar en un archivo
+
+    Escribe un programa que:
+
+        Lea un archivo de texto llamado documento.txt.
+
+        Busque todas las ocurrencias de una palabra específica ingresada por el usuario.
+
+        Reemplace las ocurrencias por otra palabra ingresada por el usuario.
+
+        Guarde los cambios en un archivo nuevo llamado documento_actualizado.txt.
+
+Considera:
+
+    Usa un StringBuilder para manipular el texto.
+
+    Maneja archivos grandes sin cargar todo su contenido en la memoria.
+
+Ejercicio 4: Exploración de directorios
+
+    Escribe un programa que:
+
+        Liste todos los archivos y directorios dentro de un directorio ingresado por el usuario.
+
+        Identifique y clasifique cada archivo por su tipo (por ejemplo: .txt, .jpg, etc.).
+
+        Cree un archivo llamado reporte_directorio.txt que contenga esta información.
+
+Herramientas:
+
+    Usa Files.newDirectoryStream para explorar directorios.
+
+    Investiga cómo manejar rutas dinámicas con la clase Path.
