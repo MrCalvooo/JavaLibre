@@ -1,0 +1,2 @@
+Este es un ejemplo de texto.
+Línea 2 del archivo.
