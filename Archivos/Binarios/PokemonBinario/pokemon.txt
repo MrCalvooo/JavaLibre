@@ -1,0 +1,501 @@
+Numero: 454
+Genero: M
+Estadisticas: 
+HP (238): ---------
+Ataque (129): -----
+Defensa (67): --
+Ataque Especial (235): ---------
+Defensa Especial (187): -------
+Velocidad (124): ----
+*************************************
+Numero: 528
+Genero: F
+Estadisticas: 
+HP (111): ----
+Ataque (176): ------
+Defensa (246): ---------
+Ataque Especial (216): --------
+Defensa Especial (193): -------
+Velocidad (136): -----
+*************************************
+Numero: 730
+Genero: M
+Estadisticas: 
+HP (182): -------
+Ataque (111): ----
+Defensa (188): -------
+Ataque Especial (69): --
+Defensa Especial (99): ---
+Velocidad (147): -----
+*************************************
+Numero: 69
+Genero: M
+Estadisticas: 
+HP (63): --
+Ataque (259): ---------
+Defensa (143): -----
+Ataque Especial (152): -----
+Defensa Especial (109): ----
+Velocidad (110): ----
+*************************************
+Numero: 726
+Genero: F
+Estadisticas: 
+HP (182): -------
+Ataque (120): ----
+Defensa (75): ---
+Ataque Especial (65): --
+Defensa Especial (68): --
+Velocidad (155): ------
+*************************************
+Numero: 316
+Genero: F
+Estadisticas: 
+HP (214): --------
+Ataque (72): --
+Defensa (135): -----
+Ataque Especial (91): ---
+Defensa Especial (163): ------
+Velocidad (172): ------
+*************************************
+Numero: 979
+Genero: M
+Estadisticas: 
+HP (236): ---------
+Ataque (182): -------
+Defensa (90): ---
+Ataque Especial (162): ------
+Defensa Especial (167): ------
+Velocidad (143): -----
+*************************************
+Numero: 179
+Genero: F
+Estadisticas: 
+HP (223): --------
+Ataque (32): -
+Defensa (102): ----
+Ataque Especial (175): ------
+Defensa Especial (102): ----
+Velocidad (105): ----
+*************************************
+Numero: 72
+Genero: F
+Estadisticas: 
+HP (96): ---
+Ataque (179): ------
+Defensa (247): ---------
+Ataque Especial (237): ---------
+Defensa Especial (235): ---------
+Velocidad (142): -----
+*************************************
+Numero: 829
+Genero: M
+Estadisticas: 
+HP (168): ------
+Ataque (137): -----
+Defensa (92): ---
+Ataque Especial (205): -------
+Defensa Especial (26): -
+Velocidad (153): -----
+*************************************
+Numero: 938
+Genero: F
+Estadisticas: 
+HP (209): --------
+Ataque (120): ----
+Defensa (172): ------
+Ataque Especial (90): ---
+Defensa Especial (76): ---
+Velocidad (149): -----
+*************************************
+Numero: 119
+Genero: F
+Estadisticas: 
+HP (245): ---------
+Ataque (100): ----
+Defensa (69): --
+Ataque Especial (114): ----
+Defensa Especial (88): ---
+Velocidad (222): --------
+*************************************
+Numero: 698
+Genero: F
+Estadisticas: 
+HP (212): --------
+Ataque (179): ------
+Defensa (110): ----
+Ataque Especial (174): ------
+Defensa Especial (129): -----
+Velocidad (93): ---
+*************************************
+Numero: 521
+Genero: M
+Estadisticas: 
+HP (20): -
+Ataque (37): -
+Defensa (57): --
+Ataque Especial (23): -
+Defensa Especial (248): ---------
+Velocidad (155): ------
+*************************************
+Numero: 423
+Genero: F
+Estadisticas: 
+HP (164): ------
+Ataque (130): -----
+Defensa (239): ---------
+Ataque Especial (53): --
+Defensa Especial (92): ---
+Velocidad (191): -------
+*************************************
+Numero: 348
+Genero: F
+Estadisticas: 
+HP (219): --------
+Ataque (123): ----
+Defensa (81): ---
+Ataque Especial (255): ---------
+Defensa Especial (194): -------
+Velocidad (202): -------
+*************************************
+Numero: 496
+Genero: F
+Estadisticas: 
+HP (49): --
+Ataque (223): --------
+Defensa (66): --
+Ataque Especial (244): ---------
+Defensa Especial (181): -------
+Velocidad (130): -----
+*************************************
+Numero: 545
+Genero: F
+Estadisticas: 
+HP (222): --------
+Ataque (74): ---
+Defensa (32): -
+Ataque Especial (223): --------
+Defensa Especial (48): --
+Velocidad (146): -----
+*************************************
+Numero: 514
+Genero: F
+Estadisticas: 
+HP (92): ---
+Ataque (21): -
+Defensa (226): --------
+Ataque Especial (105): ----
+Defensa Especial (98): ---
+Velocidad (88): ---
+*************************************
+Numero: 919
+Genero: F
+Estadisticas: 
+HP (21): -
+Ataque (255): ---------
+Defensa (43): -
+Ataque Especial (162): ------
+Defensa Especial (37): -
+Velocidad (83): ---
+*************************************
+Numero: 165
+Genero: F
+Estadisticas: 
+HP (67): --
+Ataque (122): ----
+Defensa (34): -
+Ataque Especial (70): --
+Defensa Especial (163): ------
+Velocidad (99): ---
+*************************************
+Numero: 657
+Genero: F
+Estadisticas: 
+HP (45): -
+Ataque (198): -------
+Defensa (68): --
+Ataque Especial (51): --
+Defensa Especial (216): --------
+Velocidad (89): ---
+*************************************
+Numero: 553
+Genero: F
+Estadisticas: 
+HP (145): -----
+Ataque (154): ------
+Defensa (75): ---
+Ataque Especial (173): ------
+Defensa Especial (142): -----
+Velocidad (52): --
+*************************************
+Numero: 589
+Genero: M
+Estadisticas: 
+HP (162): ------
+Ataque (190): -------
+Defensa (221): --------
+Ataque Especial (167): ------
+Defensa Especial (132): -----
+Velocidad (96): ---
+*************************************
+Numero: 336
+Genero: M
+Estadisticas: 
+HP (247): ---------
+Ataque (138): -----
+Defensa (83): ---
+Ataque Especial (28): -
+Defensa Especial (246): ---------
+Velocidad (200): -------
+*************************************
+Numero: 508
+Genero: M
+Estadisticas: 
+HP (147): -----
+Ataque (41): -
+Defensa (65): --
+Ataque Especial (43): -
+Defensa Especial (214): --------
+Velocidad (107): ----
+*************************************
+Numero: 524
+Genero: F
+Estadisticas: 
+HP (215): --------
+Ataque (50): --
+Defensa (157): ------
+Ataque Especial (149): -----
+Defensa Especial (74): ---
+Velocidad (141): -----
+*************************************
+Numero: 288
+Genero: M
+Estadisticas: 
+HP (59): --
+Ataque (188): -------
+Defensa (116): ----
+Ataque Especial (20): -
+Defensa Especial (222): --------
+Velocidad (131): -----
+*************************************
+Numero: 1006
+Genero: F
+Estadisticas: 
+HP (178): ------
+Ataque (104): ----
+Defensa (164): ------
+Ataque Especial (161): ------
+Defensa Especial (191): -------
+Velocidad (230): --------
+*************************************
+Numero: 163
+Genero: F
+Estadisticas: 
+HP (151): -----
+Ataque (222): --------
+Defensa (124): ----
+Ataque Especial (229): --------
+Defensa Especial (147): -----
+Velocidad (222): --------
+*************************************
+Numero: 614
+Genero: F
+Estadisticas: 
+HP (47): --
+Ataque (191): -------
+Defensa (69): --
+Ataque Especial (29): -
+Defensa Especial (219): --------
+Velocidad (20): -
+*************************************
+Numero: 695
+Genero: M
+Estadisticas: 
+HP (211): --------
+Ataque (240): ---------
+Defensa (47): --
+Ataque Especial (255): ---------
+Defensa Especial (83): ---
+Velocidad (235): ---------
+*************************************
+Numero: 197
+Genero: F
+Estadisticas: 
+HP (169): ------
+Ataque (45): -
+Defensa (137): -----
+Ataque Especial (109): ----
+Defensa Especial (44): -
+Velocidad (97): ---
+*************************************
+Numero: 884
+Genero: M
+Estadisticas: 
+HP (125): ----
+Ataque (91): ---
+Defensa (225): --------
+Ataque Especial (78): ---
+Defensa Especial (155): ------
+Velocidad (164): ------
+*************************************
+Numero: 2
+Genero: F
+Estadisticas: 
+HP (143): -----
+Ataque (256): ---------
+Defensa (138): -----
+Ataque Especial (122): ----
+Defensa Especial (174): ------
+Velocidad (223): --------
+*************************************
+Numero: 67
+Genero: F
+Estadisticas: 
+HP (104): ----
+Ataque (253): ---------
+Defensa (137): -----
+Ataque Especial (245): ---------
+Defensa Especial (140): -----
+Velocidad (204): -------
+*************************************
+Numero: 59
+Genero: M
+Estadisticas: 
+HP (249): ---------
+Ataque (141): -----
+Defensa (105): ----
+Ataque Especial (74): ---
+Defensa Especial (171): ------
+Velocidad (148): -----
+*************************************
+Numero: 9
+Genero: F
+Estadisticas: 
+HP (209): --------
+Ataque (115): ----
+Defensa (218): --------
+Ataque Especial (199): -------
+Defensa Especial (99): ---
+Velocidad (190): -------
+*************************************
+Numero: 10
+Genero: M
+Estadisticas: 
+HP (67): --
+Ataque (84): ---
+Defensa (100): ----
+Ataque Especial (111): ----
+Defensa Especial (75): ---
+Velocidad (103): ----
+*************************************
+Numero: 527
+Genero: F
+Estadisticas: 
+HP (28): -
+Ataque (58): --
+Defensa (92): ---
+Ataque Especial (166): ------
+Defensa Especial (227): --------
+Velocidad (199): -------
+*************************************
+Numero: 912
+Genero: M
+Estadisticas: 
+HP (196): -------
+Ataque (20): -
+Defensa (82): ---
+Ataque Especial (143): -----
+Defensa Especial (148): -----
+Velocidad (112): ----
+*************************************
+Numero: 443
+Genero: F
+Estadisticas: 
+HP (51): --
+Ataque (225): --------
+Defensa (106): ----
+Ataque Especial (240): ---------
+Defensa Especial (30): -
+Velocidad (50): --
+*************************************
+Numero: 331
+Genero: M
+Estadisticas: 
+HP (194): -------
+Ataque (203): -------
+Defensa (238): ---------
+Ataque Especial (97): ---
+Defensa Especial (242): ---------
+Velocidad (181): -------
+*************************************
+Numero: 257
+Genero: M
+Estadisticas: 
+HP (67): --
+Ataque (195): -------
+Defensa (239): ---------
+Ataque Especial (135): -----
+Defensa Especial (85): ---
+Velocidad (214): --------
+*************************************
+Numero: 687
+Genero: M
+Estadisticas: 
+HP (106): ----
+Ataque (53): --
+Defensa (203): -------
+Ataque Especial (171): ------
+Defensa Especial (122): ----
+Velocidad (34): -
+*************************************
+Numero: 932
+Genero: M
+Estadisticas: 
+HP (233): --------
+Ataque (159): ------
+Defensa (151): -----
+Ataque Especial (224): --------
+Defensa Especial (242): ---------
+Velocidad (170): ------
+*************************************
+Numero: 640
+Genero: M
+Estadisticas: 
+HP (137): -----
+Ataque (254): ---------
+Defensa (185): -------
+Ataque Especial (30): -
+Defensa Especial (157): ------
+Velocidad (212): --------
+*************************************
+Numero: 299
+Genero: M
+Estadisticas: 
+HP (109): ----
+Ataque (117): ----
+Defensa (215): --------
+Ataque Especial (126): ----
+Defensa Especial (165): ------
+Velocidad (96): ---
+*************************************
+Numero: 757
+Genero: F
+Estadisticas: 
+HP (55): --
+Ataque (39): -
+Defensa (32): -
+Ataque Especial (189): -------
+Defensa Especial (58): --
+Velocidad (62): --
+*************************************
+Numero: 941
+Genero: M
+Estadisticas: 
+HP (145): -----
+Ataque (94): ---
+Defensa (77): ---
+Ataque Especial (255): ---------
+Defensa Especial (172): ------
+Velocidad (253): ---------
+*************************************
+En total hay 50 pokemons
