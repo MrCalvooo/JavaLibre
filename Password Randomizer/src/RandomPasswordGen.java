@@ -4,20 +4,22 @@ import java.util.Scanner;
 public class RandomPasswordGen {
 
     public static void main(String[] args) throws Exception {
-        try (Scanner scanner = new Scanner(System.in)) {
-            String password = "";
-            int leng;
 
+        String password = "";
+        int leng = 0;
+        try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Longitud deseada de la contraseña: ");
             leng = scanner.nextInt();
-
-            for (int i = 0; i < leng; i++) {
-                int random = (int) (Math.random() * 4 + 1);
-                password += caracteresRandom(random);
-            }
-
-            System.out.println("Tu contraseña es: " + password);
+        } catch (NumberFormatException e) {
+            System.out.println("Error al leer el numero");
         }
+
+        for (int i = 0; i < leng; i++) {
+            int random = (int) (Math.random() * 4 + 1);
+            password += caracteresRandom(random);
+        }
+
+        System.out.println("Tu contraseña es: " + password);
     }
 
     public static String caracteresRandom(int random) {
