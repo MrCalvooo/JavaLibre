@@ -8,8 +8,18 @@ public class RandomPasswordGen {
         String password = "";
         int leng = 0;
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Longitud deseada de la contraseña: ");
-            leng = scanner.nextInt();
+
+            do {
+
+                System.out.println("Longitud deseada de la contraseña: ");
+                leng = scanner.nextInt();
+
+                if (leng < 0) {
+                    System.out.println("PORFAVOR INGRESE LONGITUD CORRECTA");
+                }
+
+            } while (leng < 0);
+
         } catch (NumberFormatException e) {
             System.out.println("Error al leer el numero");
         }
@@ -59,7 +69,6 @@ public class RandomPasswordGen {
             default ->
                 throw new AssertionError();
         }
-
         return password;
     }
 }
