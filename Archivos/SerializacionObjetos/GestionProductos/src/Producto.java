@@ -116,10 +116,14 @@ public class Producto implements Serializable {
 
     public static void verProductos(Path fichero) {
         try (InputStream fis = Files.newInputStream(fichero); ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(fis))) {
+            int precioTotal = 0, cantidadTotal = 0;
             while (true) {
                 try {
                     Producto producto = (Producto) ois.readObject();
+                    cantidadTotal += producto.getCantidad();
+                    precioTotal += producto.getPrecio() * cantidadTotal;
                     System.out.println(producto);
+                    System.out.println("Precio total del producto " + producto.getNombre() + ": " + precioTotal);
                 } catch (java.io.EOFException eof) {
                     break; // Fin del archivo
                 }
