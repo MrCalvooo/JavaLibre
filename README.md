@@ -4,10 +4,6 @@
 Esto es un repositorio donde subo algunas practicas de ejercicios de Java, estas
  practicas las uso para reforzar mis conocimientos pero tambien pueden haber proyectos interesantes como puede ser el generador aleatorio de contraseñas (link abajo)
 
-## Link
-
-[Simulador Encriptacion](https://github.com/MrCalvooo/JavaLibre/tree/main/Archivos/SimulacionEncriptacion)
-
 ## Features
 
 - Los proyectos estan en Lenguaje Java
