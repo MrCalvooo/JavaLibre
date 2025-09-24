@@ -1,0 +1,19 @@
+Crea un programa en Java llamado Padre que:
+
+    Lance un proceso hijo con ProcessBuilder que ejecute otra clase Java llamada Hijo.
+
+    El Padre debe enviar al hijo una lista de palabras (por ejemplo: "hola", "java", "procesos", "comunicación").
+
+    El Hijo debe leer todas las palabras que reciba hasta que encuentre la palabra especial "FIN".
+
+    El Hijo debe devolver al padre:
+
+        El número total de palabras recibidas (sin contar "FIN").
+
+        La palabra más larga.
+
+        La palabra más corta.
+
+    El Padre debe mostrar en consola los resultados que reciba del hijo.
+
+    Si el hijo no recibe ninguna palabra antes de "FIN", debe devolver un mensaje de error al padre.
