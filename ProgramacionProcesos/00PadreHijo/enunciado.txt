@@ -1,0 +1,19 @@
+Enunciado
+
+Crea un programa en Java llamado Padre que:
+
+    Lance un proceso hijo con ProcessBuilder que ejecute otra clase Java llamada Hijo (debes compilarla antes).
+
+    El Padre debe enviar al hijo dos números enteros a través de la entrada estándar del proceso.
+
+    El Hijo debe leer esos dos números, calcular:
+
+        La suma
+
+        El producto
+
+        Y la diferencia (primero menos segundo) y devolver los resultados por su salida estándar.
+
+    El Padre debe mostrar en consola los resultados que reciba del hijo.
+
+    Si el hijo recibe datos no numéricos, debe capturar la excepción y devolver un mensaje de error al padre.
