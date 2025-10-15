@@ -1,0 +1,11 @@
+Caja 0: 2 euros
+Caja 1: 30 euros
+Caja 2: 31 euros
+Caja 3: 86 euros
+Caja 4: 53 euros
+Caja 5: 67 euros
+Caja 6: 17 euros
+Caja 7: 98 euros
+Caja 8: 92 euros
+Caja 9: 96 euros
+
