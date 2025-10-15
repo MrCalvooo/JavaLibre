@@ -1,0 +1,21 @@
+Crear un programa que guarde información de estudiantes en un archivo binario y permita modificar o leer un estudiante específico usando RandomAccessFile.
+
+1️⃣ Especificaciones
+
+Cada estudiante tiene:
+
+ID (int, 4 bytes)
+
+Nombre (String fijo de 20 caracteres → 40 bytes si usamos UTF-16 o 20 bytes si usamos ASCII)
+
+Edad (int, 4 bytes)
+
+Se almacenarán varios estudiantes en un archivo estudiantes.dat.
+
+El programa debe permitir:
+
+Agregar estudiantes al final del archivo.
+
+Leer un estudiante por su posición.
+
+Modificar un estudiante por su posición.
