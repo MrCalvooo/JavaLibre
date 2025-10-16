@@ -1,0 +1,4 @@
+Una empresa quiere simular el registro de ventas realizadas por distintos procesos (cada proceso representa una caja registradora o punto de venta).
+Todos los procesos deben escribir en un fichero compartido (ventas.txt) el importe total de su venta.
+
+Para evitar que varios procesos escriban al mismo tiempo y corrompan el fichero, se debe garantizar el acceso sincronizado mediante un bloqueo de fichero (FileLock).
