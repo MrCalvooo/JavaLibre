@@ -1,0 +1,15 @@
+Una librería tiene un contador de libros vendidos. Varias “cajas” (procesos/hilos) registran las ventas de forma concurrente. Queremos simular esto con hilos y asegurarnos de que no se pierdan datos.
+
+Requisitos
+
+Crear un fichero ventas.txt donde se irá sumando la cantidad de libros vendidos.
+
+Crear una clase Proceso que implementa Runnable.
+
+Cada instancia de Proceso simula una caja que vende un número aleatorio de libros (0 a 10) y los suma al contador en el fichero.
+
+Debe bloquear el fichero mientras actualiza el contador para evitar colisiones (usar FileLock).
+
+Crear una clase Main que lance 10 hilos concurrentes, cada uno ejecutando un Proceso.
+
+Al finalizar, el fichero debe contener el total acumulado de todos los hilos.

@@ -1,0 +1,12 @@
+El hilo 9 vendio 4
+El hilo 0 vendio 6
+El hilo 0 vendio 1
+El hilo 1 vendio 6
+El hilo 2 vendio 6
+El hilo 3 vendio 7
+El hilo 4 vendio 2
+El hilo 5 vendio 8
+El hilo 6 vendio 8
+El hilo 7 vendio 7
+El hilo 8 vendio 9
+El hilo 9 vendio 6
