@@ -1,0 +1,48 @@
+Objetivo
+
+Practicar la concurrencia en Java usando hilos (Thread) y tareas programadas (Timer), y manejar el acceso seguro a un archivo compartido usando FileLock.
+
+Descripción
+
+Vas a simular 5 sensores que registran lecturas de temperatura periódicamente y las escriben en un fichero común llamado lecturas.txt.
+
+Cada sensor debe:
+
+Ejecutarse cada 2 segundos automáticamente.
+
+Crear un hilo independiente para registrar la lectura.
+
+Generar un número aleatorio entre 15 y 30 (temperatura en °C).
+
+Escribir en el fichero de forma segura, evitando que varios hilos escriban al mismo tiempo.
+
+El fichero debe almacenar las lecturas en este formato:
+Sensor 1: 22°C
+Sensor 2: 18°C
+Sensor 3: 27°C
+
+Requisitos
+
+Implementar 3 clases:
+
+Main: crea el Timer y programa la ejecución periódica de cada sensor.
+
+Temporizador: hereda de TimerTask y lanza un hilo (Thread) que genera la lectura.
+
+Sensor: clase que implementa Runnable y se encarga de generar la lectura y escribir en el fichero usando FileLock.
+
+Cada hilo debe adquirir un FileLock antes de escribir en el fichero y liberarlo después de terminar.
+
+El Timer debe detenerse después de 10 segundos de ejecución.
+
+Imprimir en consola cada lectura junto con el sensor que la generó.
+
+Objetivos de aprendizaje
+
+Comprender la diferencia entre hilos y procesos.
+
+Aprender a programar tareas periódicas con Timer y TimerTask.
+
+Practicar la concurrencia y el bloqueo de recursos con FileLock.
+
+Combinar la ejecución periódica y la escritura concurrente en un fichero compartido.
