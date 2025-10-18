@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.Timer;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,18 +13,20 @@ public class Main {
             }
         }
 
+        Timer timer = new Timer();
+
         for (int i = 0; i < 10; i++) {
-            String[] comandos = {"java", "-cp", "out/production/03ConcurrenciaVentas", "Venta", String.valueOf(i),
-                    file.getName()};
-            ProcessBuilder processBuilder = new ProcessBuilder(comandos);
-            processBuilder.inheritIO();
-            try {
-                Process process = processBuilder.start();
-                System.out.println("Caja " + i + " esta registrando");
-                process.waitFor();
-            } catch (IOException | InterruptedException e) {
-                throw new RuntimeException(e);
-            }
+            Temporizador venta = new Temporizador(file, i);
+            timer.schedule(venta, 1000);
         }
+
+        try {
+            Thread.sleep(12000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        timer.cancel();
+        System.out.println("Ventas registradas");
     }
 }
