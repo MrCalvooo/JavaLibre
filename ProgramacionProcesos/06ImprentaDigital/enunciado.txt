@@ -1,0 +1,42 @@
+Simulación de una Imprenta Digital
+Objetivo: Desarrollar una simulación de una imprenta digital utilizando el patrón Productor-Consumidor con un Monitor en Java. En esta simulación, varios "Diseñadores" (Productores) crearán trabajos de impresión y los añadirán a una cola de impresión compartida. Varias "Impresoras" (Consumidores) tomarán esos trabajos de la cola y los procesarán.
+El Monitor será el encargado de gestionar el acceso concurrente a la cola de impresión, asegurando que no se produzcan condiciones de carrera y que los hilos esperen de forma eficiente cuando la cola esté llena o vacía.
+Componentes a Implementar:
+1.Clase TrabajoImpresion:
+Una clase simple que represente un trabajo de impresión.
+Debe contener al menos dos atributos: un id (un número entero o String) y numeroPaginas (un número entero).
+2.Clase MonitorColaImpresion (El Monitor):
+Será el recurso compartido y el núcleo de la sincronización.
+Debe tener una estructura de datos para almacenar los TrabajoImpresion (por ejemplo, un LinkedList o ArrayDeque) con una capacidad máxima fija (ej: 10 trabajos).
+Debe implementar dos métodos synchronized:
+public synchronized void anadirTrabajo(TrabajoImpresion trabajo):
+Este método será llamado por los Productores (Diseñadores).
+Si la cola está llena (ha alcanzado su capacidad máxima), el hilo productor debe esperar (wait()).
+Cuando haya espacio, añadirá el trabajo a la cola, imprimirá un mensaje informativo (ej: "COLA: Trabajo X añadido. Trabajos en cola: Y/10") y notificará a los hilos que estén esperando (notifyAll()).
+public synchronized TrabajoImpresion recogerTrabajo():
+Este método será llamado por los Consumidores (Impresoras).
+Si la cola está vacía, el hilo consumidor debe esperar (wait()).
+Cuando haya un trabajo disponible, lo extraerá de la cola, imprimirá un mensaje (ej: "COLA: Trabajo X recogido. Trabajos en cola: Z/10") y notificará a los hilos que estén esperando (notifyAll()).
+Devolverá el TrabajoImpresion extraído.
+3.Clase Disenador (Productor):
+Debe implementar la interfaz Runnable.
+En su método run(), entrará en un bucle infinito (while(true)).
+En cada iteración:
+a.Creará un nuevo TrabajoImpresion con un ID único y un número de páginas aleatorio (ej: entre 5 y 50).
+b.Imprimirá un mensaje indicando que ha creado un nuevo trabajo (ej: "DISEÑADOR [nombre]: He creado el trabajo [ID] de [N] páginas.").
+c.Llamará al método anadirTrabajo() del monitor para entregar el trabajo.
+d.Hará una pausa de tiempo aleatorio antes de crear el siguiente trabajo (ej: Thread.sleep() entre 500 y 2000 ms).
+4.Clase Impresora (Consumidor):
+Debe implementar la interfaz Runnable.
+En su método run(), entrará en un bucle infinito (while(true)).
+En cada iteración:
+a.Llamará al método recogerTrabajo() del monitor para obtener un trabajo.
+b.Imprimirá un mensaje indicando que ha comenzado a imprimir (ej: "IMPRESORA [nombre]: Comienzo a imprimir el trabajo [ID] de [N] páginas.").
+c.Simulará el tiempo de impresión con un Thread.sleep(). El tiempo de espera debe ser proporcional al número de páginas (ej: numeroPaginas * 100 milisegundos).
+d.Al finalizar la simulación de impresión, mostrará un mensaje de finalización (ej: "IMPRESORA [nombre]: Finalizada la impresión del trabajo [ID].").
+5.Clase Principal (SimulacionImprenta):
+El método main será el punto de entrada.
+Creará una única instancia del MonitorColaImpresion.
+Creará varias instancias de hilos Disenador e Impresora (ej: 2 diseñadores y 3 impresoras), pasándoles a todos la misma instancia del monitor.
+Iniciará todos los hilos.
+Para que el programa no se ejecute indefinidamente, puedes hacer que el hilo principal duerma durante un tiempo (ej: 30 segundos) y luego interrumpa todos los hilos hijos para finalizar la simulación, como en el ejemplo que proporcionaste.
