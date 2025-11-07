@@ -1,6 +1,4 @@
-import org.w3c.dom.DOMImplementation;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
+import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -112,7 +110,41 @@ public class Main {
 
             transformer.transform(domSource, result);
             System.out.println("XML CREADO");
-        } catch (ParserConfigurationException | IOException | TransformerException e) {
+
+            System.out.println("-------------------------------------------------------------------");
+            System.out.println("Lectura del fichero XML");
+
+            factory = DocumentBuilderFactory.newInstance();
+            builder = factory.newDocumentBuilder();
+            document = builder.parse(new File("personas.xml"));
+
+            // Normalizamos
+            document.getDocumentElement().normalize();
+
+            // Root
+            String nombreRoot = document.getDocumentElement().getNodeName();
+            System.out.println("Raiz del elemento: " + nombreRoot);
+
+            // Obtenemos los hijos de raiz
+            NodeList listaNodos = document.getElementsByTagName("persona");
+
+            System.out.println("Datos de las personas");
+
+            for (int i = 0; i < listaNodos.getLength(); i++) {
+                Node personaNodo = listaNodos.item(i);
+
+                if (personaNodo.getNodeType() == Node.ELEMENT_NODE){
+                    Element persona = (Element) personaNodo;
+
+                    String nombre = persona.getElementsByTagName("nombre").item(0).getTextContent();
+                    String apellido1 = persona.getElementsByTagName("apellido1").item(0).getTextContent();
+                    String apellido2 = persona.getElementsByTagName("apellido2").item(0).getTextContent();
+                    String edad = persona.getElementsByTagName("edad").item(0).getTextContent();
+
+                    System.out.println("Datos persona: " + nombre + " " + apellido1 + " " + apellido2 + " " + edad + " años");
+                }
+            }
+        } catch (ParserConfigurationException | IOException | TransformerException | SAXException e) {
             throw new RuntimeException(e);
         }
     }
