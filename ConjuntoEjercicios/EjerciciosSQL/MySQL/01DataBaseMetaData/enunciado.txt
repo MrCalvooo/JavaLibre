@@ -1,0 +1,34 @@
+Ejercicio Práctico: Explorando Metadatos de la BD emple_datos
+Requisitos Previos
+1. Asegure que su entorno Java tiene acceso al conector JDBC para MySQL (asumiendo que está usando el entorno con la base de datos emple_deptos o emple_datos como en los ejemplos
+).
+2. El código debe incluir la gestión de excepciones (java.sql.SQLException)
+.
+3. Debe liberar los recursos (Connection, ResultSet) en un bloque finally
+.
+Tareas a Realizar
+Una vez que haya establecido la conexión (Connection) y obtenido la instancia de DatabaseMetaData (dbmd), realice las siguientes tareas utilizando los métodos correspondientes:
+Tarea 1: Identificación del Sistema y Capacidades
+Instrucción: Muestre la siguiente información básica del sistema gestor de bases de datos (SGBD) y del driver:
+1. Nombre del Producto de la base de datos
+.
+2. Nombre y Versión del Driver JDBC
+.
+3. Indique si el SGBD soporta transacciones
+.
+Tarea 2: Descubrimiento de Tablas de Usuario
+Instrucción: Liste todos los objetos en el esquema actual que sean de tipo TABLE.
+• Para cada tabla encontrada, muestre su Catálogo, Esquema (si aplica) y Nombre de la Tabla (TABLE_NAME)
+.
+Tarea 3: Detalle de Columnas por Patrón
+Instrucción: Utilice el método getColumns() para obtener y mostrar detalles específicos de las columnas dentro de la tabla empleados.
+• Muestre solo las columnas cuyo nombre contenga la subcadena "sal" (esto debería incluir la columna salario)
+.
+• Para cada columna encontrada, liste su Nombre, el Tipo de Dato específico del SGBD (TYPE_NAME), y si es IS_AUTOINCREMENT
+.
+Tarea 4: Análisis de Integridad Referencial
+Instrucción: Determine las relaciones de Clave Primaria/Ajena de las tablas clave:
+1. Clave Primaria de empleados: Muestre el nombre de la columna que constituye la Clave Primaria de la tabla empleados utilizando getPrimaryKeys()
+.
+2. Claves Ajena Referenciadas por departamentos: Muestre, utilizando getExportedKeys(), qué tabla(s) y columna(s) tienen una clave ajena que referencia la clave primaria de la tabla departamentos
+.
