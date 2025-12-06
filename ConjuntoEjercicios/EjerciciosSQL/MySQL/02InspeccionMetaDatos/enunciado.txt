@@ -1,0 +1,35 @@
+Requisitos Técnicos
+1. Debe conectar su aplicación Java a la base de datos emple_deptos (o emple_datos) utilizando el driver JDBC de MySQL.
+2. Debe obtener la instancia de la interfaz DatabaseMetaData.
+3. Implemente la gestión adecuada de recursos (cerrando Connection, ResultSet, etc.) en un bloque finally
+.
+Tareas a Realizar
+Tarea 1: Verificación de Capacidades del SGBD
+Instrucción: Utilice los métodos de retorno simple (String, int, boolean) para mostrar las siguientes capacidades del SGBD:
+1. Versión del Driver JDBC utilizado
+.
+2. El Número Máximo de Conexiones simultáneas que admite la base de datos
+.
+3. Una lista de las Funciones de Cadena disponibles en esta base de datos
+.
+Tarea 2: Descubrimiento de Tablas y Vistas
+Instrucción: Utilice el método getTables() para obtener y visualizar información sobre los objetos en la base de datos.
+1. Filtre el resultado para mostrar SOLO los objetos que sean de tipo TABLE y VIEW
+.
+2. Para cada objeto encontrado, muestre el Tipo de Objeto (TABLE_TYPE) y el Nombre de la Tabla (TABLE_NAME)
+.
+Tarea 3: Patrones de Búsqueda de Columnas
+Instrucción: Utilice el método getColumns() para inspeccionar la tabla empleados y aplicar un filtro de patrón
+.
+1. Muestre la información solo de aquellas columnas cuyo nombre termine con la subcadena "no" (por ejemplo, dept_no y emp_no).
+2. Para cada columna encontrada, liste su Nombre, el Tipo de Dato de SQL (DATA_TYPE en formato entero)
+, y si es Autoincrementable (IS_AUTOINCREMENT)
+.
+Tarea 4: Análisis Completo de Claves Ajena (Foreign Keys)
+Instrucción: Analice la relación de clave ajena entre empleados y departamentos utilizando los métodos de "claves"
+,
+:
+1. ¿Qué tablas referencian a empleados? (Claves Exportadas): Utilice getExportedKeys() sobre la tabla empleados. Si no se encuentra ninguna relación, muestre un mensaje indicándolo
+,
+.
+2. ¿A qué tablas referencia empleados? (Claves Importadas): Utilice getImportedKeys() sobre la tabla empleados. Muestre el Nombre de la Tabla Principal referenciada (PKTABLE_NAME) y la Columna de Clave Ajena en empleados (FKCOLUMN_NAME)
