@@ -1,0 +1,32 @@
+Se asume la conexión a su base de datos relacional que incluye las tablas departamentos y empleados.
+Requisitos Técnicos
+1. Conecte su aplicación Java a la base de datos (por ejemplo, MySQL).
+2. Obtenga la instancia de la interfaz DatabaseMetaData (dbmd).
+3. Incluya la gestión de excepciones (SQLException) y la liberación de recursos (cerrar Connection, ResultSet) en el bloque finally
+,
+.
+Tareas a Realizar
+Tarea 1: Consulta de Capacidades del SGBD
+Instrucción: Muestre la siguiente información que describe las funcionalidades del motor de la base de datos:
+1. Recupere una lista de las palabras clave de SQL que NO son palabras clave estándar de SQL: 2003, disponibles en esta base de datos
+.
+2. Indique si la base de datos admite transacciones utilizando el método supportsTransactions()
+.
+Tarea 2: Listado de Objetos del Sistema
+Instrucción: Utilice el método getTables() para filtrar y mostrar exclusivamente los objetos que sean de tipo SYSTEM TABLE.
+• Si encuentra objetos de este tipo, liste su Nombre de Tabla y Tipo. Si no encuentra ninguno, muestre un mensaje que lo indique.
+Tarea 3: Inspección Detallada de Columnas de departamentos
+Instrucción: Utilice el método getColumns() para obtener y mostrar metadatos de las columnas de la tabla departamentos
+.
+1. Aplique un filtro de patrón para mostrar SOLO las columnas cuyos nombres empiecen por la letra 'd'.
+2. Para cada columna resultante, muestre:
+    ◦ Nombre de la Columna (COLUMN_NAME).
+    ◦ Posición Ordinal en la tabla (ORDINAL_POSITION)
+.
+    ◦ El Valor por Defecto (COLUMN_DEF) (o una indicación si es NULL)
+.
+Tarea 4: Análisis de Claves Exportadas (Referencia Externa)
+Instrucción: Utilice getExportedKeys() sobre la tabla empleados
+.
+1. El objetivo es determinar si alguna otra tabla en el esquema utiliza la clave primaria de empleados como clave ajena.
+2. Recorra el ResultSet resultante. Si se encuentra alguna relación, muestre la tabla y columna que referencia a empleados. Si el conjunto de resultados está vacío, muestre un mensaje que confirme que la clave primaria de empleados no es referenciada por ninguna otra tabla en el esquema.
