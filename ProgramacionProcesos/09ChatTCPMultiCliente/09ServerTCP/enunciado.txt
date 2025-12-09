@@ -1,0 +1,31 @@
+Objetivo: Modificar la aplicación de Servidor (manteniendo la lógica del Cliente) para permitir la conexión y atención simultánea a múltiples clientes, implementando la programación concurrente mediante la creación de hilos para gestionar cada comunicación individual.
+Requisitos del Protocolo y Conexión
+1. Protocolo: Orientado a conexión (TCP).
+2. Componentes: Cree las siguientes clases:
+    ◦ ServidorChatMultiusuario (Aplicación principal del servidor).
+    ◦ HiloManejadorCliente (Clase que extiende Thread o implementa Runnable, responsable de gestionar la comunicación con un único cliente).
+    ◦ ClienteChatMonousuario (El cliente del ejercicio anterior puede reutilizarse, ya que la lógica de envío/recepción secuencial no cambia para él).
+3. Configuración: Usar un puerto definido (ej., 20001) y probar la concurrencia lanzando el programa ClienteChatMonousuario múltiples veces.
+Tareas del Servidor Principal (ServidorChatMultiusuario)
+El servidor principal debe operar de forma no bloqueante para permitir múltiples conexiones:
+1. Crear un objeto ServerSocket y definir el puerto de escucha (ej., 20001)
+.
+2. Implementar un bucle infinito (while(true)) que se mantenga a la espera de nuevas conexiones
+.
+3. Dentro del bucle, llamar al método accept() de ServerSocket. Este método bloqueará hasta que llegue un nuevo cliente, momento en el que devuelve un nuevo Socket (manguera)
+.
+4. Contar los clientes que se conectan (usando un contador, numerocliente) para identificarlos.
+5. Delegar inmediatamente la gestión de la nueva conexión: crear una instancia de HiloManejadorCliente (pasándole el Socket y, opcionalmente, el número de cliente) e iniciar su ejecución con el método start()
+.
+Tareas del Hilo Manejador de Cliente (HiloManejadorCliente)
+Cada instancia de esta clase será un hilo dedicado a un cliente específico y debe implementar la siguiente lógica:
+1. El hilo debe recibir y almacenar el objeto Socket (manguera) a través de su constructor
+.
+2. Dentro de su método run():
+    ◦ Establecer los canales de flujo de entrada y salida (BufferedReader y PrintWriter, o DataInputStream y DataOutputStream) usando los flujos del Socket que le fue asignado
+.
+    ◦ Implementar el bucle de conversación del servidor original (enviar un saludo, leer del cliente, responder, etc.)
+.
+    ◦ Mostrar mensajes en consola que identifiquen qué hilo y qué cliente está realizando la acción (ej., "El Hilo Cliente 3 ha recibido: ...").
+    ◦ La conversación debe terminar si el mensaje recibido es "ADIOS".
+3. Asegurarse de cerrar el Socket (manguera) al finalizar la comunicación para liberar los recursos asignados a ese cliente
