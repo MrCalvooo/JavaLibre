@@ -21,6 +21,9 @@ public class Main {
             // Ej 2
             subirSalario();
 
+            // Ej 3
+            consultarEmplesDept();
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -40,6 +43,30 @@ public class Main {
             System.out.println("Salario actualizado correctamente a " + emples + " empleados");
         } else {
             System.out.println("Error al actualizar el salario");
+        }
+    }
+
+    public static void consultarEmplesDept() throws SQLException {
+        System.out.println("Ingrese numero de departamento para consultar: ");
+        int dept_no = Integer.parseInt(scanner.nextLine());
+        PreparedStatement preparedStatement = connection.prepareStatement("SELECT dnombre FROM departamentos WHERE dept_no = ?");
+        preparedStatement.setInt(1, dept_no);
+        ResultSet rs = preparedStatement.executeQuery();
+        if (!rs.next()) {
+            System.out.println("No existe un departamento con el número proporcionado.");
+        } else {
+            do {
+                System.out.printf("Nombre departamento: %s\n", rs.getString("dnombre"));
+            } while (rs.next());
+        }
+        preparedStatement = connection.prepareStatement("select apellido, salario, oficio from empleados\n" +
+                "join departamentos\n" +
+                "on empleados.dept_no = departamentos.dept_no\n" +
+                "where empleados.dept_no = 10");
+        rs = preparedStatement.executeQuery();
+        System.out.println("Empleados del departamento: ");
+        while (rs.next()) {
+            System.out.printf("%s, %.2f, %s\n", rs.getString("apellido"), rs.getDouble("salario"), rs.getString("oficio"));
         }
     }
 
