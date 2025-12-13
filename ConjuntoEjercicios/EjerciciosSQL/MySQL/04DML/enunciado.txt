@@ -1,0 +1,31 @@
+Ejercicio 1: Inserción y Validación Condicional (Basado en Ejercicio 13)
+Este es un ejercicio complejo que combina SELECT (consulta) para validación y INSERT (manipulación de datos) para la inserción condicional de un nuevo empleado.
+Objetivo: Crear un programa que inserte un nuevo empleado en la tabla empleados. Los valores (EMP_NO, APELLIDO, OFICIO, DIR, SALARIO, COMISION, DEPT_NO) deben ser solicitados al usuario (simulado o por entrada de datos).
+Antes de realizar la inserción, el programa debe realizar las siguientes comprobaciones y validaciones utilizando sentencias SELECT y lógica Java:
+1. Existencia del Departamento: Comprobar que el DEPT_NO proporcionado exista en la tabla departamentos. Si no existe, el programa debe insertarlo primero.
+2. Duplicado de Empleado: Comprobar que el EMP_NO proporcionado no exista ya en la tabla empleados. Si existe, no se inserta y se notifica el motivo.
+3. Salario Positivo: Verificar que el SALARIO sea positivo (mayor que 0). Si es negativo o cero, no se inserta.
+4. No Nulos: APELLIDO y OFICIO no deben ser nulos.
+5. Fecha de Alta: La fecha de alta del empleado (FECHA_ALT) debe ser la fecha actual.
+Requisito de Salida:
+• Si la fila se inserta correctamente, visualizar un mensaje de éxito.
+• Si no se inserta, visualizar el motivo (ej. "Número de empleado duplicado", "Salario no positivo")
+.
+Ejercicio 2: Actualización Parametrizada (Basado en Ejercicio 15)
+Objetivo: Incrementar el salario de todos los empleados que pertenecen a un departamento específico, utilizando sentencias preparadas (PreparedStatement).
+Instrucción:
+1. Solicite al usuario el número de departamento (DEPT_NO) y la cantidad de subida salarial.
+2. Construya una sentencia UPDATE utilizando placeholders (?) en lugar de concatenar los valores directamente a la cadena SQL.
+3. Asigne los valores utilizando los métodos setXXX() de la interfaz PreparedStatement (ej., setInt(1, dept_no) y setFloat(2, subida))
+,
+.
+4. Ejecute la sentencia y muestre el número de filas afectadas
+.
+Ejercicio 3: Consulta Parametrizada y Agregación (Basado en Ejercicio 16)
+Objetivo: Realizar una consulta compleja para obtener información detallada y agregada de un departamento específico utilizando PreparedStatement.
+Instrucción:
+1. Solicite al usuario el número de departamento (DEPT_NO).
+2. Realice dos consultas (pueden ser dos PreparedStatement distintos, o una lógica combinada):
+    ◦ Consulta A: Obtener el nombre del departamento de la tabla departamentos. Si no existe, mostrar un mensaje.
+    ◦ Consulta B (Detalle y Agregación): Obtener y visualizar el APELLIDO, SALARIO y OFICIO de todos los empleados de ese departamento.
+3. Al finalizar el listado de empleados, muestre el Salario Medio y el Número Total de Empleados de ese departamento
